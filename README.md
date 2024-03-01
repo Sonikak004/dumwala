@@ -1,4 +1,4 @@
-<a name="readme-top"></a>
+<!-- <a name="readme-top"></a>
 
 <div align="center">
   <h2><b>LEADERBOARD</b></h2>
@@ -109,8 +109,8 @@ I would like to thank Microverse for giving me this oppurtunity.
 
 <!-- LICENSE -->
 
-## 📝 License <a name="license"></a>
+<!-- ## 📝 License <a name="license"></a>
 
 This project is [MIT](./mit.md) licensed.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>  -->
