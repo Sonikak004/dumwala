@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px){    
+    .section {
+        padding: 0rem 0 2rem;
+    }
+}
+
+.coming-s {
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}

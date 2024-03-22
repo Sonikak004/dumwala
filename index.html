@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--==================== FAVICON ====================-->
+  <link rel="icon" href="./img/favicon.png" />
+  <!--========== BOX ICONS LIBRARY ==========-->
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  <!--========== CSS ==========-->
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./landing.css" />
+  <!--========== Title ==========-->
+  <title>Dumwala</title>
+
+  <!--================== LINK THUMBNAIL META TAGS ===================-->
+  <!-- MS Tile - for Microsoft apps-->
+  <!-- fb & Whatsapp -->
+  <meta property="og:site_name" content="Dumwala" />
+  <meta property="og:title" content=" Biryani Delivery | Dumwala" />
+  <meta property="og:description" content="Savor the best biryani in the region!" />
+  <!-- IMG URL: -->
+  <meta property="og:type" content="website" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <!--  size up to 300px. Anything above this will not work in WhatsApp -->
+  <meta property="og:image:width" content="300" />
+  <meta property="og:image:height" content="300" />
+  <meta property="og:url" content="https://dumwala-biryani.com" />
+</head>
+
+<body>
+  <!--========== SCROLL TOP ==========-->
+  <a href="#" class="scrollTop show-scroll" id="scroll-top">
+    <i class="bx bx-chevron-up scrollTop_icon"></i>
+  </a>
+
+  <!--========== HEADER ==========-->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <h1 class="h1">Dumwala</h1> <!---- <img class="logo-nav" src="./img/dumwalalogo.png" alt="Dumwala Biryani" /> -->
+      <!-- <span>Biryani</span> -->
+
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="#home" class="nav_link">Home</a>
+          </li>
+          <li class="nav_item">
+            <a href="./menu.html" class="nav_link">Menu</a>
+          </li>
+          <li class="nav_item">
+            <a href="./about.html" class="nav_link">About Us</a>
+          </li>
+          <li class="nav_item">
+            <a href="./franchise.html" class="nav_link">Franchise</a>
+          </li>
+          <li class="nav_item">
+            <a href="./contact-us.html" class="nav_link">Contact Us</a>
+          </li>
+
+          <!-- <li><i class="bx bx-moon change-theme" id="theme-button"></i></li> -->
+        </ul>
+      </div>
+
+      <div class="nav_toggle" id="nav-toggle">
+        <!--When clicked activate the class "opened"
+          to the button tag as well to the 4 SVG lines-->
+        <button class="menu" aria-label="Open Menu"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
+          <svg width="40" height="41" viewBox="0 0 100 100">
+            <path class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <!-- <div class="slider-container">
+    <img src="./img/banner1.png" alt="Slide 1" class="slider-image banner" />
+  </div> -->
+
+  <div class="slideshowContainer">
+    <img class="imageSlides banner" src="./img/128px (7).png" alt="beach side city view">
+    <img class="imageSlides banner" src="./img/Copy of 128px (4).png" alt="lake surrounded by mountains">
+
+    <span id="leftArrow" class="slideshowArrow">&#8249;</span>
+    <span id="rightArrow" class="slideshowArrow">&#8250;</span>
+
+    <div class="slideshowCircles">
+      <span class="circle dot"></span>
+      <span class="circle"></span>
+      <span class="circle"></span>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <main class="l-main">
+      <!--========== HOME ==========-->
+
+      <section class="home" id="home">
+        <div class="content">
+          <div class="text">
+            <h2>It's Dumwala<br>Biryani <span>Bliss.</span></h2>
+            <p>Satisfy your cravings with our signature Biryani; Let the flavors speak for themselves!</p>
+            <a href="https://wa.me/c/919739161304" class="btn">Order Now</a>
+          </div>
+          <div class="slider">
+            <div class="slides active">
+              <img src="./bir1.png">
+            </div>
+            <div class="slides">
+              <img src="./bir2.png">
+            </div>
+            <div class="slides">
+              <img src="./bir3.png">
+            </div>
+            <div class="slides">
+              <img src="./bir4.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="feet">
+          <div class="prevNext">
+            <p>Always Tempting</p>
+            <span class="prev"><ion-icon name="chevron-back-outline"></ion-icon></span>
+            <span class="next"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+          </div>
+        </div>
+
+      </section>
+
+      <!--========== ABOUT ==========-->
+      <section class="about section at bd-container" id="about">
+        <div class="about_container bd-grid">
+          <div class="about_data">
+            <span class="section-subtitle about_initial">About Us</span>
+            <h2 class="section-title about_initial">
+              Discover the story of Dumwala!
+            </h2>
+            <p class="about_description">
+              Discover the narrative behind Dumwala, where tradition meets passion. From our humble beginnings driven by
+              a
+              love for authentic flavors to our unwavering commitment to quality standards, each dish narrates our
+              culinary journey.
+            </p>
+            <a href="./about.html" class="button">Read more</a>
+          </div>
+
+          <img src="./img/about-img.jpg" alt=" Natural ingredients" class="about_img" />
+        </div>
+      </section>
+
+      <!--========== SERVICES ==========-->
+      <section class="services section ss bd-container" id="services">
+        <span class="section-subtitle">What sets us apart!</span>
+        <h2 class="section-title">Our Offerings</h2>
+
+        <div class="services_container bd-grid">
+          <div class="services_content">
+            <img src="./img/auth-recipe.png" alt="Healthy food" class="services_img img1" />
+
+            <h3 class="services_title">Authentic Recipes</h3>
+            <p class="services_description">
+              Delivering genuine flavors from our exclusive research, promising an unmatched taste.
+            </p>
+
+          </div>
+          <div class="services_content">
+            <img src="./img/organic-ing.png" alt="Healthy food" class="services_img" />
+            <h3 class="services_title">Selected Ingredients</h3>
+            <p class="services_description">
+              Infusing healthiness into our biryani with top-quality products, along with flavorful experience.
+            </p>
+          </div>
+
+          <div class="services_content">
+            <img src="./img/quality.png" alt="Healthy food" class="services_img" />
+            <h3 class="services_title">Quality Assurance</h3>
+            <p class="services_description">
+              Dumwala guarantees top-tier quality through thorough checks, ensuring satisfaction.
+            </p>
+          </div>
+
+          <div class="services_content">
+            <img src="./img/chef.png" alt="Healthy food" class="services_img" />
+            <h3 class="services_title">Expert Chefs</h3>
+            <p class="services_description">
+              Savor expertly crafted dishes by our skilled chefs, elevating your dining experience.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!--========== FOODS ==========-->
+      <section class="foods section fs bd-container" id="foods">
+        <span class="section-subtitle">The best</span>
+        <h2 class="section-title">This Week's Specials</h2>
+
+        <div class="foods_container fc bd-grid">
+          <div class="foods_content">
+            <img src="./img/plate1.png" alt="" class="foods_img" />
+            <h3 class="foods_name">Spicy Hyderabadi Chicken Biryani</h3>
+            <span class="foods_detail">Meal for One</span>
+            <span class="foods_price">Rs. 160/-</span>
+
+            <a href="#" class="button foods_button">
+              <i class="bx bx-cart"></i>
+            </a>
+          </div>
+
+          <div class="foods_content">
+            <img src="./img/plate2.png" alt="" class="foods_img" />
+            <h3 class="foods_name">Special Boneless Chicken Biryani</h3>
+            <span class="foods_detail">Meal for One</span>
+            <span class="foods_price">Rs. 200/-</span>
+
+            <a href="#" class="button foods_button">
+              <i class="bx bx-cart"></i>
+            </a>
+          </div>
+
+          <div class="foods_content">
+            <img src="./img/plate2.png" alt="" class="foods_img" />
+            <h3 class="foods_name">Special Dum Biryani</h3>
+            <span class="foods_detail">Meal for One </span>
+            <span class="foods_price">Rs. 199/-</span>
+
+            <a href="#" class="button foods_button">
+              <i class="bx bx-cart"></i>
+            </a>
+          </div>
+
+          <div class="foods_content">
+            <img src="./img/plate4.png" alt="" class="foods_img" />
+            <h3 class="foods_name">Chicken Biryani</h3>
+            <span class="foods_detail">Family Meal (Serves 6) </span>
+            <span class="foods_price">Rs. 999/-</span>
+
+            <a href="#" class="button foods_button">
+              <i class="bx bx-cart"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--===== FRANCHISE =======-->
+      <section class="app section fe bd-container" id="franchise">
+        <div class="app_container bd-grid">
+          <div class="app_data">
+            <span class="section-subtitle app_initial">Franchise Opportunities</span>
+            <h2 class="section-title app_initial">Join Our Family</h2>
+            <p class="app_description">
+              Are you passionate about biryani and looking to start your own business? Consider joining our franchise
+              program and become a part of our growing biryani family! As a franchisee, you'll benefit from our
+              established brand, proven business model, and ongoing support to
+              help you succeed in the competitive food industry.
+            </p>
+            <!-- Button to Join Us -->
+            <a href="./franchise.html" class="button">Learn More</a>
+          </div>
+          <img src="./img/join-us.jpg" alt="" class="app_img about_img" />
+        </div>
+      </section>
+
+      <!--========== CONTACT US ==========-->
+      <section class="contact section   bd-container" id="contact">
+        <div class="contact_container cs bd-grid">
+          <div class="contact_data">
+            <span class="section-subtitle contact_initial">Have Questions?</span>
+            <h2 class="section-title contact_initial">Contact Us</h2>
+            <p class="contact_description">
+              Do you have any questions, feedback, or inquiries about our services? We're here to help! Reach out to us
+              for assistance or to learn more about what we offer.
+            </p>
+          </div>
+
+          <div class="contact_button">
+            <a href="./contact-us.html" class="button">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!--========== FOOTER ==========-->
+
+  <footer class=" foot footer section">
+    <div class="footer_container bd-grid">
+      <div class="footer_content">
+
+        <!-- <b class="">
+          Dumwala
+          <span>Biryani</span>
+        </b> -->
+
+        <span class="footer_description">The best service, for you.</span>
+
+        <div>
+          <a href="https://www.instagram.com/dumwalabiryani/" class="footer_social"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.facebook.com/dumwalabiryani/" class="footer_social"><i class="bx bxl-facebook"></i></a>
+          <a href="https://twitter.com/Dumwalablr" class="footer_social"><i class="bx bxl-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="footer_content">
+        <h3 class="footer_title">Information</h3>
+        <ul>
+          <li><a href="./privacy policy.html" class="footer_link">Privacy Policy</a></li>
+          <li><a href="./terms-of-service.html" target="_blank" class="footer_link">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_content">
+        <h3 class="footer_title">Address</h3>
+        <ul>
+          <li>Bangalore - KA</li>
+        </ul>
+      </div>
+
+      <div class="footer_content">
+        <h3 class="footer_title">Navigation</h3>
+        <ul>
+          <li><a href="./index.html#foods" class="footer_link">Menu</a></li>
+          <li><a href="./about.html#abt" class="footer_link">About Us</a></li>
+          <li><a href="./franchise.html" class="footer_link">Franchise</a></li>
+          <li><a href="./contact-us.html" class="footer_link">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!--========== SCROLL REVEAL LIBRARY ==========-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--========== MAIN JS ==========-->
+  <script src="./main.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

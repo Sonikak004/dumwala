@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--==================== FAVICON ====================-->
+    <link rel="icon" href="./img/favicon.png" />
+    <!--========== BOX ICONS LIBRARY ==========-->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <!--========== Title ==========-->
+    <title>Dumwala</title>
+
+    <!--================== LINK THUMBNAIL META TAGS ===================-->
+    <!-- MS Tile - for Microsoft apps-->
+    <!-- fb & Whatsapp -->
+    <meta property="og:site_name" content="Dumwala Biryani" />
+    <meta property="og:title" content="🍲 Biryani Delivery | Dumwala Biryani" />
+    <meta property="og:description" content="Savor the best biryani in the region!" />
+    <!-- IMG URL: -->
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <!--  size up to 300px. Anything above this will not work in WhatsApp -->
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:url" content="https://dumwala-biryani.com" />
+</head>
+
+<body>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrollTop show-scroll" id="scroll-top">
+        <i class="bx bx-chevron-up scrollTop_icon"></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <h1 class="h1">Dumwala</h1>
+            <!-- <span>Biryani</span> -->
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="./index.html#home" class="nav_link">Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./menu.html" class="nav_link">Menu</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./about.html" class="nav_link">About Us</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./franchise.html" class="nav_link">Franchise</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="./contact-us.html" class="nav_link">Contact Us</a>
+                    </li>
+
+                    <!-- <li><i class="bx bx-moon change-theme" id="theme-button"></i></li> -->
+                </ul>
+            </div>
+
+            <div class="nav_toggle" id="nav-toggle">
+                <!--When clicked activate the class "opened"
+          to the button tag as well to the 4 SVG lines-->
+                <button class="menu" aria-label="Open Menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
+                    <svg width="40" height="41" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact section bd-container" id="contact">
+        <div class="contact-container">
+            <!-- Formspree contact form -->
+            <form id="franchiseForm" action="https://formspree.io/f/xeqylpda" method="POST" class="contact_form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="_replyto" required>
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]*" required>
+
+
+                <label for="message">Your Query</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="button">Send Message</button>
+            </form>
+            <div class="feedwrap">
+                <div id="feedback" class="feedback"></div>
+                <div id="successMessage" style="display: none;
+                background: rgb(0 209 0);
+                color: white; 
+                align-items: center;
+                padding: 15px;
+                margin: 15px; ">We will reach out to you soon!</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--========== FOOTER ==========-->
+    <footer class=" foot footer section">
+        <div class="footer_container bd-grid">
+            <div class="footer_content">
+
+                <!-- <b class="">
+              Dumwala
+              <span>Biryani</span>
+            </b> -->
+
+                <span class="footer_description">The best service, for you.</span>
+
+                <div>
+                    <a href="https://www.instagram.com/dumwalabiryani/" class="footer_social"><i
+                            class="bx bxl-instagram"></i></a>
+                    <a href="https://www.facebook.com/dumwalabiryani/" class="footer_social"><i
+                            class="bx bxl-facebook"></i></a>
+                    <a href="https://twitter.com/Dumwalablr" class="footer_social"><i class="bx bxl-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer_content">
+                <h3 class="footer_title">Information</h3>
+                <ul>
+                    <li><a href="./privacy policy.html" class="footer_link">Privacy Policy</a></li>
+                    <li><a href="./terms-of-service.html" target="_blank" class="footer_link">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_content">
+                <h3 class="footer_title">Address</h3>
+                <ul>
+                    <li>Bangalore - KA</li>
+                </ul>
+            </div>
+
+            <div class="footer_content">
+                <h3 class="footer_title">Navigation</h3>
+                <ul>
+                    <li><a href="./index.html#foods" class="footer_link">Menu</a></li>
+                    <li><a href="./about.html#abt" class="footer_link">About Us</a></li>
+                    <li><a href="./franchise.html" class="footer_link">Franchise</a></li>
+                    <li><a href="./contact-us.html" class="footer_link">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--========== SCROLL REVEAL LIBRARY ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        document.getElementById("name").addEventListener("input", function (event) {
+            let inputValue = event.target.value;
+            let sanitizedValue = inputValue.replace(/[^A-Za-z]/g, '');
+            if (inputValue !== sanitizedValue) {
+                event.target.value = sanitizedValue;
+            }
+        });
+    </script>
+    <script>
+
+        document.getElementById("name").addEventListener("input", function (event) {
+            let inputValue = event.target.value;
+            let sanitizedValue = inputValue.replace(/[^A-Za-z]/g, '');
+            if (inputValue !== sanitizedValue) {
+                event.target.value = sanitizedValue;
+            }
+        });
+
+        document.getElementById("mobile").addEventListener("input", function (event) {
+            let inputValue = event.target.value;
+            let sanitizedValue = inputValue.replace(/[^0-9]/g, ''); // Remove any characters that are not digits
+            event.target.value = sanitizedValue; // Update input value
+        });
+        document.getElementById("franchiseForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let mobile = document.getElementById("mobile").value;
+            let message = document.getElementById("message").value;
+
+            // Your existing validation logic for name, email, and message
+            // For example, checking if fields are empty
+
+            if (!name || !email || !mobile || !message) {
+                alert("Please fill in all fields.");
+                return;
+            }
+
+            // Validate mobile number
+            if (!/^\d{10}$/.test(mobile)) {
+                alert("Please enter a valid 10-digit mobile number.");
+                return;
+            }
+            // If all fields are valid, proceed with form submission
+            fetch(this.action, {
+                method: 'POST',
+                body: new FormData(this),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        this.reset();
+                        document.getElementById("successMessage").style.display = "block";
+                        setTimeout(function () {
+                            document.getElementById("successMessage").style.display = "none";
+                        }, 10000);
+                    } else {
+                        throw new Error('Form submission failed!');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+
+        });
+
+    </script>
+    <!--========== MAIN JS ==========-->
+    <script src="./main.js"></script>
+</body>
+
+</html>

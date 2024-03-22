@@ -1,0 +1,46 @@
+.app_container {
+    grid-template-columns: auto;
+}
+
+.about-section {
+    margin-left: 397px;
+    margin-right: 396px;
+    margin-top: 130px;
+}
+
+.app_description > span{
+   color: #ef0e0e;
+   font-weight: bold;
+}
+
+.img-div {
+  margin-bottom: 40px;
+}
+
+.app-img {
+  width: 550px;
+  border-radius: 15px;
+}
+
+.app_description {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .section-title, .section-subtitle {
+        text-align: left;
+    }
+
+    body {
+      margin: 30px;
+    }
+    
+    .app_description {
+      text-align: justify;
+    }
+}
