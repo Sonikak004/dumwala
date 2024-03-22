@@ -100,20 +100,8 @@ if (selectedTheme) {
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
     darkTheme
   );
-  // themeButton.classList[selectedIcon === "bx-moon" ? "add" : "remove"](
-  //   iconTheme
-  // );
-}
 
-// // Activate / deactivate the theme manually with the button
-// themeButton.addEventListener("click", () => {
-//   // Add or remove the dark / icon theme
-//   document.body.classList.toggle(darkTheme);
-//   themeButton.classList.toggle(iconTheme);
-//   // We save the theme and the current icon that the user chose
-//   localStorage.setItem("selected-theme", getCurrentTheme());
-//   localStorage.setItem("selected-icon", getCurrentIcon());
-// });
+}
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
@@ -124,13 +112,13 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(
-  `.home_data, .home_img,
-          .about_data, .about_img,
-          .services_content, .menu_content,
-          .app_data, .app_img,
-          .contact_data, .contact_button,
-          .footer_content, .franchise_intro, .franchise_container
-          , .foods_content, .about-section`,
+  // `.home_data, .home_img,
+  //         .about_data, .about_img,
+  //         .services_content, .menu_content,
+  //         .app_data, .app_img,
+  //         .contact_data, .contact_button,
+  //         .footer_content, .franchise_intro, .franchise_container
+  //         , .foods_content, .about-section`,
   {
     interval: 200
   }
