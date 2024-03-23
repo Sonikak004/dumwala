@@ -13,41 +13,32 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--==================== FAVICON ====================-->
-    <link rel="icon" href="./img/favicon.png" />
-    <!--========== CSS ==========-->
+    <link rel="icon" href="./img/favicon.webp" />
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="canonical" href="https://www.dumwala.com">
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./franchise.css" />
-    <!--========== Title ==========-->
-    <title>World's Tastiest Biryani Brand | Dumwala</title>
-
-    <!--================== LINK THUMBNAIL META TAGS ===================-->
-    <!-- MS Tile - for Microsoft apps-->
-    <!-- fb & Whatsapp -->
+    <meta name="geo.placename" content="India">
+    <title>Franchise</title>
+    <meta name="description"
+        content="Dumwala invites you to join its franchise network, offering enticing returns with minimal investment and personalized support for seamless business growth." />
     <meta property="og:site_name" content="Dumwala Biryani" />
     <meta property="og:title" content="🍲 Biryani Delivery | Dumwala Biryani" />
     <meta property="og:description" content="Savor the best biryani in the region!" />
-    <!-- IMG URL: -->
     <meta property="og:type" content="website" />
     <meta property="og:image:type" content="image/jpeg" />
-    <!--  size up to 300px. Anything above this will not work in WhatsApp -->
     <meta property="og:image:width" content="300" />
     <meta property="og:image:height" content="300" />
     <meta property="og:url" content="https://dumwala-biryani.com" />
 </head>
 
 <body>
-    <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrollTop show-scroll" id="scroll-top">
         <i class="bx bx-chevron-up scrollTop_icon"></i>
     </a>
-
-    <!--========== HEADER ==========-->
     <header class="l-header" id="header">
         <nav class="nav bd-container">
             <h1 class="h1">Dumwala</h1>
-            <!-- Dumwala <img class="logo-nav" src="./img/dumwalalogo.png" alt="Dumwala Biryani" /> -->
-            <!-- <span>Biryani</span> -->
 
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
@@ -67,13 +58,10 @@
                         <a href="./contact-us.html" class="nav_link">Contact Us</a>
                     </li>
 
-                    <!-- <li><i class="bx bx-moon change-theme" id="theme-button"></i></li> -->
                 </ul>
             </div>
 
             <div class="nav_toggle" id="nav-toggle">
-                <!--When clicked activate the class "opened"
-          to the button tag as well to the 4 SVG lines-->
                 <button class="menu" aria-label="Open Menu"
                     onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
                     <svg width="40" height="41" viewBox="0 0 100 100">
@@ -87,11 +75,10 @@
             </div>
         </nav>
     </header>
-
     <section class="franchise section" id="franchise">
         <div class="franchise_intro">
             <div class="img-desc-div">
-                <img src="./img/2.png" alt="Franchise oppurtunity under 20k" title="Franchise oppurtunity under 20k"
+                <img src="./img/2.webp" alt="Franchise oppurtunity under 20k" title="Franchise oppurtunity under 20k"
                     class="franchise_image">
                 <div class="franchise_intro_text">
                     <div class="franchise-head">
@@ -212,27 +199,28 @@
             </div>
         </div>
     </section>
-
-    <!--========== FOOTER ==========-->
     <footer class=" foot footer section">
         <div class="footer_container bd-grid">
             <div class="footer_content">
-
-                <!-- <b class="">
-              Dumwala
-              <span>Biryani</span>
-            </b> -->
-
                 <span class="footer_description">The best service, for you.</span>
-
                 <div>
-                    <a href="https://www.instagram.com/dumwalabiryani/" class="footer_social"><i
-                            class="bx bxl-instagram"></i></a>
-                    <a href="https://www.facebook.com/dumwalabiryani/" class="footer_social"><i
-                            class="bx bxl-facebook"></i></a>
-                    <a href="https://twitter.com/Dumwalablr" class="footer_social"><i class="bx bxl-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/dumwalabiryani/" class="footer_social"><i
-                            class="bx bxl-linkedin"></i></a>
+                    <a href="https://www.instagram.com/dumwalabiryani/" class="footer_social" aria-label="Instagram">
+                        <i class="bx bxl-instagram"></i>
+                        <span class="visually-hidden">Instagram</span>
+                    </a>
+                    <a href="https://www.facebook.com/dumwalabiryani/" class="footer_social" aria-label="Facebook">
+                        <i class="bx bxl-facebook"></i>
+                        <span class="visually-hidden">Facebook</span>
+                    </a>
+                    <a href="https://twitter.com/Dumwalablr" class="footer_social" aria-label="Twitter">
+                        <i class="bx bxl-twitter"></i>
+                        <span class="visually-hidden">Twitter</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dumwalabiryani/" class="footer_social" aria-label="LinkedIn">
+                        <i class="bx bxl-linkedin"></i>
+                        <span class="visually-hidden">LinkedIn</span>
+                    </a>
+
                 </div>
             </div>
 
@@ -262,27 +250,6 @@
             </div>
         </div>
     </footer>
-
-    <!--========== SCROLL REVEAL LIBRARY ==========-->
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Get the franchise type elements
-            var cloudKitchen = document.getElementById('cloud-kitchen');
-            var conversion = document.getElementById('conversion');
-
-            // Add event listeners
-            cloudKitchen.addEventListener('click', function () {
-                window.location.href = './contact-us.html'; // Redirect to the contact page
-            });
-
-            conversion.addEventListener('click', function () {
-                window.location.href = './contact-us.html'; // Redirect to the contact page
-            });
-        });
-
-    </script>
-    <!--========== MAIN JS ==========-->
     <script src="./main.js"></script>
 </body>
 

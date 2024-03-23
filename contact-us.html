@@ -13,42 +13,33 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--==================== FAVICON ====================-->
-    <link rel="icon" href="./img/favicon.png" />
-    <!--========== BOX ICONS LIBRARY ==========-->
-    <!--========== CSS ==========-->
+    <link rel="icon" href="./img/favicon.webp" />
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./contact.css" />
-    <!--========== Title ==========-->
-    <title>World's Tastiest Biryani Brand | Dumwala</title>
-
-    <!--================== LINK THUMBNAIL META TAGS ===================-->
-    <!-- MS Tile - for Microsoft apps-->
-    <!-- fb & Whatsapp -->
+    <meta name="geo.placename" content="India">
+    <title>Contact Us</title>
+    <meta name="description"
+        content="Connect with us effortlessly. Whether you have questions, feedback, or simply want to say hello, we're here to listen and assist. Reach out to us today!" />
+    <meta property="og:site_name" content="Dumwala Biryani" />
     <meta property="og:site_name" content="Dumwala Biryani" />
     <meta property="og:title" content="🍲 Biryani Delivery | Dumwala Biryani" />
     <meta property="og:description" content="Savor the best biryani in the region!" />
-    <!-- IMG URL: -->
     <meta property="og:type" content="website" />
     <meta property="og:image:type" content="image/jpeg" />
-    <!--  size up to 300px. Anything above this will not work in WhatsApp -->
     <meta property="og:image:width" content="300" />
     <meta property="og:image:height" content="300" />
     <meta property="og:url" content="https://dumwala-biryani.com" />
 </head>
 
 <body>
-    <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrollTop show-scroll" id="scroll-top">
         <i class="bx bx-chevron-up scrollTop_icon"></i>
     </a>
 
-    <!--========== HEADER ==========-->
     <header class="l-header" id="header">
         <nav class="nav bd-container">
             <h1 class="h1">Dumwala</h1>
-            <!-- <span>Biryani</span> -->
-
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
                     <li class="nav_item">
@@ -66,14 +57,10 @@
                     <li class="nav_item">
                         <a href="./contact-us.html" class="nav_link">Contact Us</a>
                     </li>
-
-                    <!-- <li><i class="bx bx-moon change-theme" id="theme-button"></i></li> -->
                 </ul>
             </div>
 
             <div class="nav_toggle" id="nav-toggle">
-                <!--When clicked activate the class "opened"
-          to the button tag as well to the 4 SVG lines-->
                 <button class="menu" aria-label="Open Menu"
                     onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
                     <svg width="40" height="41" viewBox="0 0 100 100">
@@ -90,7 +77,6 @@
 
     <section class="contact section bd-container" id="contact">
         <div class="contact-container">
-            <!-- Formspree contact form -->
             <form id="franchiseForm" action="https://formspree.io/f/xeqylpda" method="POST" class="contact_form">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" required>
@@ -118,27 +104,28 @@
         </div>
     </section>
 
-
-    <!--========== FOOTER ==========-->
     <footer class=" foot footer section">
         <div class="footer_container bd-grid">
             <div class="footer_content">
-
-                <!-- <b class="">
-              Dumwala
-              <span>Biryani</span>
-            </b> -->
-
                 <span class="footer_description">The best service, for you.</span>
-
                 <div>
-                    <a href="https://www.instagram.com/dumwalabiryani/" class="footer_social"><i
-                            class="bx bxl-instagram"></i></a>
-                    <a href="https://www.facebook.com/dumwalabiryani/" class="footer_social"><i
-                            class="bx bxl-facebook"></i></a>
-                    <a href="https://twitter.com/Dumwalablr" class="footer_social"><i class="bx bxl-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/dumwalabiryani/" class="footer_social"><i
-                            class="bx bxl-linkedin"></i></a>
+                    <a href="https://www.instagram.com/dumwalabiryani/" class="footer_social" aria-label="Instagram">
+                        <i class="bx bxl-instagram"></i>
+                        <span class="visually-hidden">Instagram</span>
+                    </a>
+                    <a href="https://www.facebook.com/dumwalabiryani/" class="footer_social" aria-label="Facebook">
+                        <i class="bx bxl-facebook"></i>
+                        <span class="visually-hidden">Facebook</span>
+                    </a>
+                    <a href="https://twitter.com/Dumwalablr" class="footer_social" aria-label="Twitter">
+                        <i class="bx bxl-twitter"></i>
+                        <span class="visually-hidden">Twitter</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dumwalabiryani/" class="footer_social" aria-label="LinkedIn">
+                        <i class="bx bxl-linkedin"></i>
+                        <span class="visually-hidden">LinkedIn</span>
+                    </a>
+
                 </div>
             </div>
 
@@ -168,9 +155,6 @@
             </div>
         </div>
     </footer>
-
-    <!--========== SCROLL REVEAL LIBRARY ==========-->
-
     <script>
         document.getElementById("name").addEventListener("input", function (event) {
             let inputValue = event.target.value;

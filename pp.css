@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+.container {
+    margin-top: 64px !important;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    top: 100px;
+}
+
+footer {
+    margin-top: 89px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 746px) {
+    .container {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        margin-top: 8rem;
+    }
+}
