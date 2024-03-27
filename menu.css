@@ -9,3 +9,12 @@
     align-items: center;
     height: 300px;
 }
+
+.grid-product__title-inner, .ec-link {
+    color: #ffffff !important;
+}
+
+.ec-grid {
+    display: flex !important;
+    justify-content: center !important;
+}
